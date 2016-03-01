@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+
+    <EditText
+        android:id="@+id/topicxml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Topic Name"
+         />
+
+    <EditText
+        android:id="@+id/detailsxml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Topic Details"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:id="@+id/addingdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Database"
+        android:onClick="oYe"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Seach Topic Wise"/>
+    <Button
+        android:id="@+id/searchdata"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Go"
+        android:padding="8dp"
+         />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listfromxml"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"></ListView>
+
+</LinearLayout>
